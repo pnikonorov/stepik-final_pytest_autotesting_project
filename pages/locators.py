@@ -16,9 +16,9 @@ class LoginPageLocators(object):
     PASSWORD_REGISTER_FIELD = (By.CSS_SELECTOR, "#id_registration-password1")
     CONFIRM_PASSWORD_FIELD = (By.CSS_SELECTOR, "#id_registration-password2")
     REGISTER_BTN = (By.CSS_SELECTOR, "[name='registration_submit']")
-    EMAIL_LOGIN_FIELD = (By.CSS_SELECTOR, "#id_login-username")
-    PASSWORD_LOGIN_FIELD = (By.CSS_SELECTOR, "#id_login-password")
-    LOG_IN_BTN = (By.CSS_SELECTOR, "[name='login_submit']")
+    #EMAIL_LOGIN_FIELD = (By.CSS_SELECTOR, "#id_login-username")
+    #PASSWORD_LOGIN_FIELD = (By.CSS_SELECTOR, "#id_login-password")
+    #LOG_IN_BTN = (By.CSS_SELECTOR, "[name='login_submit']")
 
 class ProductPageLocators(object):
     ADD_TO_BASKET_BTN = (By.CSS_SELECTOR, ".btn-add-to-basket")
