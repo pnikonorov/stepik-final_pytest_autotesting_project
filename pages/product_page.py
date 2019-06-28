@@ -25,5 +25,11 @@ class ProductPage(BasePage):
         assert product_price == product_price_in_basket_total_message, \
             "Incorrect price in basket total message: got '{}', expected '{}'".format(product_price_in_basket_total_message, product_price)
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.PRODUCT_IS_ADDED_MESSAGE), \
+            "Success message is presented, but should not be"
 
+    def should_disappear_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.PRODUCT_IS_ADDED_MESSAGE), \
+            "Success message isn't disappear, but should"
 
